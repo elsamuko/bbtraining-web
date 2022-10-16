@@ -3,19 +3,21 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "482a140ef12537b92fcba97965f43b3e",
-"/": "482a140ef12537b92fcba97965f43b3e",
-"flutter.js": "0816e65a103ba8ba51b174eeeeb2cb67",
+  "index.html": "32d0358d4d85ccbe8bac114c039caa3d",
+"/": "32d0358d4d85ccbe8bac114c039caa3d",
+"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "43b6c2a8154c146b64d1beda0137723b",
-"assets/AssetManifest.json": "24f668bea8bdd03ceec947ff460075e2",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dd3c4233029270506ecc994d67785a37",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "613e4cc1af0eb5148b8ce409ad35446d",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "d1722d5cf2c7855862f68edb85e31f88",
+"main.dart.js": "be58549cd6466babb6362be9df1d78ad",
+"assets/shaders/ink_sparkle.frag": "9eb8f4c3e8854f102d88294c230aab0c",
+"assets/AssetManifest.json": "586abd663fc6c2a01edb5fcf7f6eda2f",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "26f5af2d93473531f82ef5060f9c6d45",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "1f7cb220b3f5309130bd6d9ad87e0fc0",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "4e20cb87b0d43808c49449ffd69b1a74",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/NOTICES": "0e4261a54d015ff2cb7d8d416a77af69",
+"assets/NOTICES": "3298107ef6444f9ba11c904db96d4247",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
-"assets/res/exercises.json": "63ae0f51b55cde8c4ff810cc5a1023d2",
+"assets/res/exercises.json": "79e032d360a86e92d0aa3993585d1b44",
+"assets/res/emoji_u1f43b.png": "f1a245fc25c8e5ba3da1383f8cce20ef",
 "assets/res/images/Biceps%2520from%2520Side_0.jpg": "8da9f0255a06bdeaf06b1ccb09755008",
 "assets/res/images/Elbow%2520to%2520Heel_0.jpg": "3a973d1bf5da89181c43294333ac1471",
 "assets/res/images/Front%2520Support%2520Lunge%2520Jumps_0.jpg": "05e0cc8fb31d6791a2995819b24a6054",
@@ -56,13 +58,15 @@ const RESOURCES = {
 "assets/res/images/Bird%2520Dog_2.jpg": "864807027ff90c9f4715c0f5b5585529",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "version.json": "4858155e54ec4bfb938c13f36ce1ffe7",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
-"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
+"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
+"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
+"canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
+"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
+"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"manifest.json": "d26b49293552c1bd60e1afa9b333df29"
+"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
+"manifest.json": "e3656b2270448ab2be29fed71cc668b5"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -70,7 +74,6 @@ const RESOURCES = {
 const CORE = [
   "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -169,9 +172,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })

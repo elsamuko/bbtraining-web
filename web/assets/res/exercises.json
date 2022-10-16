@@ -245,10 +245,10 @@
         "floor": 0.0,
         "outdoor": 1.0,
         "stress": "calves",
-        "pairwise": 0.0,
-        "reps": 30,
+        "pairwise": 1.0,
+        "reps": 20,
         "unit": "s",
-        "instructions": "jump with straight knees",
+        "instructions": "jump with straight knees on one leg; repeat on other side",
         "images": 0
     },
     {
@@ -897,7 +897,7 @@
         "outdoor": 0.0,
         "stress": 0,
         "pairwise": 1.0,
-        "reps": 10,
+        "reps": 8,
         "unit": 0,
         "instructions": "stand on one leg; get momentum and jump on the bench; jump back down",
         "images": 0
@@ -939,7 +939,7 @@
         "outdoor": 0.0,
         "stress": 0,
         "pairwise": 1.0,
-        "reps": 10,
+        "reps": 8,
         "unit": 0,
         "instructions": "stand on one leg; jump as far as possible on one leg; turn and jump back",
         "images": 0
@@ -1212,8 +1212,8 @@
         "outdoor": 1.0,
         "stress": 0,
         "pairwise": 0.0,
-        "reps": 40,
-        "unit": 0,
+        "reps": 30,
+        "unit": "s",
         "instructions": "run in place with quick small steps; box forward with your hands",
         "images": 0
     },
