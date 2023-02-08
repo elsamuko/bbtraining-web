@@ -39,7 +39,7 @@
         "reps": 8,
         "unit": 0,
         "instructions": "stand upright and sit down on the floor; lay on the back while moving the legs above your head; touch the floor over your head with the legs; get back up and jump",
-        "images": 0
+        "images": 2
     },
     {
         "exercise": "Bank Lifts",
@@ -645,7 +645,7 @@
         "outdoor": 0.0,
         "stress": 0,
         "pairwise": 1.0,
-        "reps": 10,
+        "reps": 8,
         "unit": 0,
         "instructions": "sit on your side and bend one leg in; put the equisided hand on the floor behind your back; push your hips outward upward",
         "images": 0
