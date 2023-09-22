@@ -60,7 +60,7 @@
         "reps": 10,
         "unit": 0,
         "instructions": "stand with one foot on a bank and put your weight on it; stand up by pushing from the foot on the bank and no the lower one; when up reverse motion and move slowly down again",
-        "images": 0
+        "images": 2
     },
     {
         "exercise": "Bank Lunge",
@@ -143,7 +143,7 @@
         "pairwise": 1.0,
         "reps": 10,
         "unit": 0,
-        "instructions": "2021-03-14T00:00:00quadruped positionstart on all fours with knees on the floor; raise your left arm and your right leg and form a straight line; gold the limbs back in and touch knee and elbow",
+        "instructions": "start on all fours with knees on the floor; raise your left arm and your right leg and form a straight line; get the limbs back again and touch knee and elbow",
         "images": 3
     },
     {
@@ -165,7 +165,7 @@
         "reps": 15,
         "unit": 0,
         "instructions": "start on all fours with knees raised; lift your left arm upwards and push your right leg under your body; kick into the air and return to the starting position; alternate on other side",
-        "images": 0
+        "images": 3
     },
     {
         "exercise": "Bridge Walks",
@@ -396,7 +396,7 @@
         "reps": 30,
         "unit": 0,
         "instructions": "start on all fours and go into a concave hold by pushing your glutes upwards; start walking with your feet only;",
-        "images": 0
+        "images": 2
     },
     {
         "exercise": "Elbow to Heel",
@@ -588,6 +588,27 @@
         "images": 0
     },
     {
+        "exercise": "Hands Up Back Teps",
+        "upper": 1,
+        "lower": 3,
+        "core": 4,
+        "strength": 1,
+        "cardio": 1,
+        "mobility": 5,
+        "difficulty": 2,
+        "weights": 0.0,
+        "bank": 0.0,
+        "bar": 0.0,
+        "floor": 0.0,
+        "outdoor": 0.0,
+        "stress": 0,
+        "pairwise": 1.0,
+        "reps": 20,
+        "unit": 0,
+        "instructions": "Stand upright with arms up in the air; raise one leg backwards; move leg back again and tep on the floor",
+        "images": 0
+    },
+    {
         "exercise": "Heater",
         "upper": 5,
         "lower": 5,
@@ -627,7 +648,7 @@
         "reps": 30,
         "unit": 0,
         "instructions": "jump alternately by taking the knees to hip level; keep your arms straight up",
-        "images": 0
+        "images": 2
     },
     {
         "exercise": "Hip Opener",
@@ -651,6 +672,27 @@
         "images": 0
     },
     {
+        "exercise": "Hip Shoulder Pushes",
+        "upper": 3,
+        "lower": 3,
+        "core": 3,
+        "strength": 3,
+        "cardio": 1,
+        "mobility": 4,
+        "difficulty": 3,
+        "weights": 0.0,
+        "bank": 0.0,
+        "bar": 0.0,
+        "floor": 0.0,
+        "outdoor": 0.0,
+        "stress": "core",
+        "pairwise": 0.0,
+        "reps": 8,
+        "unit": 0,
+        "instructions": "lean on your hands while sitting; push your body forwards into a butterfly pose; move back again and repeat",
+        "images": 0
+    },
+    {
         "exercise": "Jumping Jacks",
         "upper": 2,
         "lower": 4,
@@ -669,7 +711,7 @@
         "reps": 40,
         "unit": 0,
         "instructions": "jump from closed step to a wide while moving your arms sideways up and down",
-        "images": 0
+        "images": 2
     },
     {
         "exercise": "Kettlebell Swing",
@@ -690,7 +732,7 @@
         "reps": 20,
         "unit": 0,
         "instructions": "do a squat while swinging a weight under you; get up again with momentum and swing the weight over the head; pause there shortly and swing back while squatting again; avoid a hollow back",
-        "images": 0
+        "images": 3
     },
     {
         "exercise": "Lateral Leg Raises",
@@ -861,6 +903,27 @@
         "images": 0
     },
     {
+        "exercise": "Medial Leg Raises",
+        "upper": 1,
+        "lower": 3,
+        "core": 4,
+        "strength": 3,
+        "cardio": 2,
+        "mobility": 3,
+        "difficulty": 3,
+        "weights": 0.0,
+        "bank": 0.0,
+        "bar": 0.0,
+        "floor": 1.0,
+        "outdoor": 0.0,
+        "stress": 0,
+        "pairwise": 1.0,
+        "reps": 12,
+        "unit": 0,
+        "instructions": "lie on the side with legs straight; support your body with your upper leg; raise the lower leg, then lower it again; optionally keep your whole body raised the whole time",
+        "images": 0
+    },
+    {
         "exercise": "Mountain Climber",
         "upper": 2,
         "lower": 4,
@@ -963,7 +1026,7 @@
         "reps": 6,
         "unit": 0,
         "instructions": "stand on one leg; go into a squat while holding the other leg; get back up; don\u2019t squat lower than 90\u00b0 if you have sensible knees",
-        "images": 0
+        "images": 1
     },
     {
         "exercise": "Plank Climbers",
@@ -1026,7 +1089,7 @@
         "reps": 50,
         "unit": "s",
         "instructions": "go into a plank; keep a straight line with your body; look in front of your hands",
-        "images": 0
+        "images": 1
     },
     {
         "exercise": "Planks with Teps",
@@ -1065,7 +1128,7 @@
         "outdoor": 1.0,
         "stress": 0,
         "pairwise": 0.0,
-        "reps": 10,
+        "reps": 8,
         "unit": 0,
         "instructions": "go onto your knees; get momentum, jump onto your feet and stand up; get back on your knees",
         "images": 0
@@ -1134,27 +1197,6 @@
         "images": 0
     },
     {
-        "exercise": "Reverse Lateral Leg Raises",
-        "upper": 1,
-        "lower": 3,
-        "core": 4,
-        "strength": 3,
-        "cardio": 2,
-        "mobility": 3,
-        "difficulty": 3,
-        "weights": 0.0,
-        "bank": 0.0,
-        "bar": 0.0,
-        "floor": 1.0,
-        "outdoor": 0.0,
-        "stress": 0,
-        "pairwise": 1.0,
-        "reps": 12,
-        "unit": 0,
-        "instructions": "lie on the side with legs straight; support your body with your upper leg; raise the lower leg, then lower it again; optionally keep your whole body raised the whole time",
-        "images": 0
-    },
-    {
         "exercise": "Scissor Jumps",
         "upper": 3,
         "lower": 3,
@@ -1173,6 +1215,48 @@
         "reps": 40,
         "unit": 0,
         "instructions": "jump; land with crossed legs and crossed arms in front",
+        "images": 0
+    },
+    {
+        "exercise": "Shoulder Pulls",
+        "upper": 4,
+        "lower": 1,
+        "core": 1,
+        "strength": 4,
+        "cardio": 1,
+        "mobility": 3,
+        "difficulty": 3,
+        "weights": 0.0,
+        "bank": 0.0,
+        "bar": 1.0,
+        "floor": 0.0,
+        "outdoor": 0.0,
+        "stress": "shoulder",
+        "pairwise": 0.0,
+        "reps": 20,
+        "unit": 0,
+        "instructions": "hang onto a bar; pull your shoulder blades together; release",
+        "images": 0
+    },
+    {
+        "exercise": "Shoulder Pushes",
+        "upper": 4,
+        "lower": 1,
+        "core": 3,
+        "strength": 4,
+        "cardio": 1,
+        "mobility": 3,
+        "difficulty": 3,
+        "weights": 0.0,
+        "bank": 0.0,
+        "bar": 0.0,
+        "floor": 0.0,
+        "outdoor": 0.0,
+        "stress": "shoulder core",
+        "pairwise": 0.0,
+        "reps": 20,
+        "unit": 0,
+        "instructions": "go into front support; push your shoulders down; release",
         "images": 0
     },
     {
@@ -1344,6 +1428,27 @@
         "images": 0
     },
     {
+        "exercise": "Standing Hip Flexor",
+        "upper": 1,
+        "lower": 5,
+        "core": 4,
+        "strength": 3,
+        "cardio": 1,
+        "mobility": 3,
+        "difficulty": 3,
+        "weights": 0.0,
+        "bank": 0.0,
+        "bar": 0.0,
+        "floor": 0.0,
+        "outdoor": 0.0,
+        "stress": 0,
+        "pairwise": 1.0,
+        "reps": 10,
+        "unit": 0,
+        "instructions": "Stand upright; put your right hand on your right leg; pull your right leg as high as possible; adjust the resistance with your right hand; move the right leg down again while keeping the knee bend; move the leg back for a full range of motion; set the leg down and repeat on the other leg;",
+        "images": 0
+    },
+    {
         "exercise": "Standing Leg Raises",
         "upper": 1,
         "lower": 3,
@@ -1404,6 +1509,27 @@
         "reps": 8,
         "unit": 0,
         "instructions": "lie on your stomach; raise your feet and your arms; keep your arms straight and in front of your body; look down; optionally paddle with your arms",
+        "images": 0
+    },
+    {
+        "exercise": "Symmetrical Bird Dog",
+        "upper": 3,
+        "lower": 2,
+        "core": 4,
+        "strength": 2,
+        "cardio": 1,
+        "mobility": 4,
+        "difficulty": 2,
+        "weights": 0.0,
+        "bank": 0.0,
+        "bar": 0.0,
+        "floor": 0.0,
+        "outdoor": 0.0,
+        "stress": "core",
+        "pairwise": 1.0,
+        "reps": 10,
+        "unit": 0,
+        "instructions": "start on all fours with knees on the floor; raise your left arm and your left leg and form a straight line; get the limbs back again and touch knee and elbow",
         "images": 0
     },
     {
